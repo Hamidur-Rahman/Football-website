@@ -2,11 +2,18 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.Top-view{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .home-page{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 300px;
+    width: 1200px;
     background-color: rgb(84, 84, 218);
 }
 /* h
@@ -37,7 +44,7 @@ Hover style */
     /* grid-column-gap: 10px;
     grid-row-gap: 10px; */
     margin-top: 30px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     width: 900px;
     background-color: dimgrey;
 }
@@ -59,7 +66,7 @@ Hover style */
     width: 100%;
 }
 .player-list{
-    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -69,6 +76,7 @@ Hover style */
     background-color: hotpink;
     border: 2px solid hotpink;
     margin-left: 50px;
+    color: white;
 }
 .match-pic img{
     height: 200px;
@@ -81,21 +89,76 @@ table, th, td{
     border: 2px solid black;
     border-collapse: collapse;
 }
+.optional{
+    display:flex;
+    justify-content: center;
+}
 .summary{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: cadetblue;
     width: 900px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-top: 30px;
     padding: 10px;
+    margin-bottom: 30px;
 }
 .highlight, .match-pic{
-    margin-left: 10px;
+    margin-left: 30px;
     margin-bottom: 20px;
 }
 }
 .Data{
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.font{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 400px;
+    height: 100px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* media screen style */
+
+@media screen and (max-width: 688px){
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .summary{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .home-page{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 688px) and (max-width: 889px){
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .summary{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .home-page{
+        width: 100%;
+    }
 }
