@@ -34,24 +34,68 @@ Hover style */
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 30px;
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
     margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    /* justify-content: center;
-    align-items: center; */
+    margin-left: 100px;
+    width: 900px;
+    background-color: dimgrey;
 }
 /* player style */
 .player{
     margin-top: 20px;
-    /* height: 330px;
-    width: 474px; */
+    height: 400px;
+    width: 250px;
+    padding: 5px;
+    margin-left: 20px;
+    background-color: gainsboro;
 }
 .player:hover{
     border: 3px solid rgb(6, 66, 68);
     padding: 10px;
 }
 .player img{
-    height: 200px;
+    height: 190px;
     width: 100%;
+}
+.player-list{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+/* highlight style */
+.highlight a{
+    text-decoration: none;
+    background-color: hotpink;
+    border: 2px solid hotpink;
+    margin-left: 50px;
+}
+.match-pic img{
+    height: 200px;
+    width: 200px;
+}
+table{
+    background-color: blanchedalmond;
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.summary{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: cadetblue;
+    width: 900px;
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.highlight, .match-pic{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+}
+.Data{
+    margin-left: 10px;
+    margin-top: 20px;
 }
