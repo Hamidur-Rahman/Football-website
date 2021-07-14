@@ -18,8 +18,8 @@ body{
 }
 /* h
 Hover style */
-.home-page:hover .banner{
-    transform: scale(1.5);
+.banner:hover{
+    transform:rotate(30deg)
 }
 
 .banner img{
